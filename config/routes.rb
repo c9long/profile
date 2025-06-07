@@ -11,4 +11,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "home#index"
+  # Define a route for the Clio controller's index action
+  get "clio" => "clio#index", as: :clio
+
+  # Define a route for the Home controller's index action
+  get "home" => "home#index", as: :home
 end
