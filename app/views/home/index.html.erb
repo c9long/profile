@@ -8,19 +8,35 @@
     </div>
     <div class="col-auto px-3">
       <div class="container-fluid my-5">
-        <p class="text-start fw-bold text-3xl font-monospace my-0">Christopher R. Long</p>
-        <p class="text-start text-opacity-75 fw-semibold text-xl font-monospace my-0">Welcome to my portfolio☺️</p>
-        <p class="text-start text-opacity-50 font-monospace my-0">Built with Ruby on Rails and Bootstrap.</p>
+        <p class="text-start fw-bold font-monospace my-0 display-4 display-md-3 display-lg-2" style="font-size: 2rem; font-size: clamp(2rem, 5vw, 3.5rem);">Christopher R. Long</p>
+        <p class="text-start text-opacity-75 fw-semibold font-monospace my-0 h5 h-md-4 h-lg-3" style="font-size: 1.25rem; font-size: clamp(1.25rem, 3vw, 2rem);">Welcome to my portfolio☺️</p>
+        <p class="text-start text-opacity-50 font-monospace my-0 small">Built with Ruby on Rails and Bootstrap</p>
+        <style>
+          @media (max-width: 575.98px) {
+            .display-4 { font-size: 2rem !important; }
+            .h5 { font-size: 1.25rem !important; }
+          }
+          @media (min-width: 576px) and (max-width: 991.98px) {
+            .display-md-3 { font-size: 2.5rem !important; }
+            .h-md-4 { font-size: 1.5rem !important; }
+          }
+          @media (min-width: 992px) {
+            .display-lg-2 { font-size: 3.5rem !important; }
+            .h-lg-3 { font-size: 2rem !important; }
+          }
+        </style>
       </div>
     </div>
   </div>
-  <div class="row mx-0 my-5">
-    <div class="col-2 d-flex justify-content-center align-items-center">
+  <div class="row mx-0 my-5 justify-content-center align-items-center">
+    <div class="col-lg-3 col-xxl-auto d-flex justify-content-center align-items-center">
       <div class="container-fluid text-center">
-        <%= image_tag("uwaterloo.png", class: "rounded-circle", height: 250) %>
+        <span class="d-none d-xxl-inline">
+          <%= image_tag("uwaterloo.png", class: "rounded-circle", width: 250) %>
+        </span>
       </div>
     </div>
-    <div class="col-10 ps-0 pe-5">
+    <div class="col-lg-9 col-xxl-10 ps-0">
       <div class="container-fluid mx-auto my-5">
         <style>
           body {
