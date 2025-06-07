@@ -1,0 +1,17 @@
+// Custom text size variables
+$text-sizes: (
+  "xs": 0.75rem,    // 12px
+  "sm": 0.875rem,   // 14px
+  "md": 1rem,       // 16px
+  "lg": 2rem,    // 20px
+  "xl": 3rem,     // 24px
+  "2xl": 4rem,   // 28px
+  "3xl": 5rem       // 32px
+);
+
+// Generate text size utility classes
+@each $size, $value in $text-sizes {
+  .text-#{$size} {
+    font-size: $value !important;
+  }
+}

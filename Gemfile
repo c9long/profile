@@ -13,7 +13,7 @@ gem "bootsnap", require: false
 gem "kamal", require: false
 gem "thruster", require: false
 
-gem "bootstrap", "~> 5.2", ">= 5.2.3"
+gem "bootstrap", "~> 5.3.3"
 gem "htmlbeautifier"
 gem "dartsass-sprockets"
 
