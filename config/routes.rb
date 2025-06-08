@@ -16,4 +16,5 @@ Rails.application.routes.draw do
 
   # Define a route for the Home controller's index action
   get "home" => "home#index", as: :home
+  post "contact", to: "home#contact"
 end

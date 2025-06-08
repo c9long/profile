@@ -1,16 +1,17 @@
 <% content_for :page_title do %>
   c9long's Profile: Homepage
 <% end %>
-<div class="mx-0 text-light">
+<div style="height: 150px;"></div>
+<div class="mx-5 text-light">
   <div class="row justify-content-center align-items-center mx-0 mb-3">
-    <div class="col-auto mx-0 px-3 text-center my-5">
-      <%= image_tag("headshot.jpg", class:"rounded-circle", height: 250, width: 250) %>
+    <div class="col-auto mx-0 px-5 text-center">
+      <%= image_tag("headshot.jpg", class:"rounded-circle", height: 400, width: 400) %>
     </div>
-    <div class="col-auto px-3">
-      <div class="container-fluid my-5">
-        <p class="text-start fw-bold font-monospace my-0 display-4 display-md-3 display-lg-2" style="font-size: 2rem; font-size: clamp(2rem, 5vw, 3.5rem);">Christopher R. Long</p>
-        <p class="text-start text-opacity-75 fw-semibold font-monospace my-0 h5 h-md-4 h-lg-3" style="font-size: 1.25rem; font-size: clamp(1.25rem, 3vw, 2rem);">Welcome to my portfolio☺️</p>
-        <p class="text-start text-opacity-50 font-monospace my-0 small">Built with Ruby on Rails and Bootstrap</p>
+    <div class="col-auto px-5">
+      <div class="container-fluid">
+        <p class="text-start fw-bold font-monospace my-0 display-4 display-md-3 display-lg-2" style="font-size: 2rem; font-size: clamp(2rem, 5vw, 3.5rem);"><%= t("name") %></p>
+        <p class="text-start text-opacity-75 fw-semibold font-monospace my-0 h5 h-md-4 h-lg-3" style="font-size: 1.25rem; font-size: clamp(1.25rem, 3vw, 2rem);"><%= t("welcome") %></p>
+        <p class="text-start text-opacity-50 font-monospace my-0 small"><%= t("built_with") %></p>
         <style>
           @media (max-width: 575.98px) {
             .display-4 { font-size: 2rem !important; }
@@ -28,42 +29,73 @@
       </div>
     </div>
   </div>
+  <div style="height: 150px;"></div>
   <div class="row mx-0 my-5 justify-content-center align-items-center">
-    <div class="col-lg-3 col-xxl-auto d-flex justify-content-center align-items-center">
-      <div class="container-fluid text-center">
+    <p class="text-center text-opacity-75 fw-semibold text-2xl mb-3 pe-5"><%= t("about_me.title") %></p>
+    <div class="px-auto col-lg-3 col-xxl-auto d-none d-lg-flex justify-content-center align-items-center">
+      <div class="container-fluid">
         <span class="d-none d-xxl-inline">
           <%= image_tag("uwaterloo.png", class: "rounded-circle", width: 250) %>
         </span>
       </div>
     </div>
-    <div class="col-lg-9 col-xxl-10 ps-0">
+    <div class="col-md-12 col-lg-9 col-xxl-10 ps-0">
       <div class="container-fluid mx-auto my-5">
         <style>
           body {
             font-family: 'Roboto', sans-serif;
           }
         </style>
-        <p class="text-start text-opacity-75 fw-semibold text-xl mb-3 pe-5">About Me</p>
-        <p class="text-start text-opacity-50 mb-3 pe-5" style="font-size: 1.2rem;">
-          I'm Chris, a fourth year computer science student at the University of Waterloo. As a software developer, I'm passionate about creating efficient and scalable applications, and love working across the entire stack. My expertise lies in Ruby on Rails, Cloud infrastructure, and C#/.NET development. I've worked extensively in the cybersecurity umbrella, with a focus on implementing various identity and access management strategies for user authentication. As a site reliability engineer, my expertise lies primarily in synthetic monitoring, Moogsoft alerts integration, API and secrets storage, and Kubernetes maintenance. I enjoy solving complex problems and continuously learning new skills to enhance my craft.
+        <p class="text-start text-opacity-50 mb-3" style="font-size: 1.2rem;">
+          <%= t("about_me.description") %>
         </p>
-        <p class="text-start text-opacity-50 mb-3 pe-5" style="font-size: 1.2rem;">
-          In my free time, I enjoy playing video games, working on personal projects, playing golf, building computers, and spending time with friends and family. I'm always looking for new challenges and opportunities to grow as a developer.
+        <p class="text-start text-opacity-50 mb-3" style="font-size: 1.2rem;">
+          <%= t("about_me.free_time") %>
         </p>
       </div>
     </div>
   </div>
-  <!-- <div class="row mx-0 my-5">
+  <div style="height: 150px;"></div>
+  <div class="row mx-0">
+    <p class="text-center text-opacity-75 fw-semibold text-2xl mb-3 pe-5"><%= t("professional_experience.title") %></p>
+    <div style="height: 30px;"></div>
     <div class="col-3 text-center">
-      <%= link_to image_tag("Ruby.webp", class: "rounded-circle", height: 250), "/clio" %>
+      <%= link_to image_tag("Ruby.webp", class: "rounded-circle", height: 350), "/clio" %>
     </div>
-    <div class="col-3 px-0">
+    <div class="col-3 text-center">
+      <%= link_to image_tag("csharp.svg", class: "rounded-circle border border-white", height: 350, style: "border-width: 8px;"), "/" %>
     </div>
-    <div class="col-3 px-0">
+    <div class="col-3 text-center">
+      <%= link_to image_tag("moogsoft.jpg", class: "rounded-circle", height: 350), "/" %>
     </div>
-    <div class="col-3 px-0">
+    <div class="col-3 text-center">
+      <%= link_to image_tag("kotlin.png", class: "rounded-circle", height: 350), "/" %>
     </div>
-  </div> -->
+  </div>
+  <div style="height: 270px;"></div>
+  <div class="row mx-0">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <div class="card text-bg-secondary mb-3 mx-5">
+        <div class="card-body">
+          <p class="text-center fw-semibold card-title text-2xl"><%= t("contact_card.title") %></p>
+          <%= form_with url: contact_path, method: :post, local: true do %>
+            <div class="input-group mb-3">
+              <%= email_field_tag :email, nil, class: "form-control", id: "inputEmail", placeholder: "Email Address" %>
+            </div>
+            <div class="input-group mb-3">
+              <%= telephone_field_tag :phone, nil, class: "form-control", id: "inputPhone", placeholder: "Phone Number" %>
+            </div>
+            <div class="input-group mb-3">
+              <%= text_area_tag :message, nil, class: "form-control", style: "min-height: 250px", id: "inputMessage", placeholder: "Message" %>
+            </div>
+            <%= button_tag "Submit", type: "submit", class: "btn btn-primary" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="col-2"></div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

@@ -1,31 +1,27 @@
-# Files in the config/locales directory are used for internationalization and
-# are automatically loaded by Rails. If you want to use locales other than
-# English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more about the API, please read the Rails Internationalization guide
-# at https://guides.rubyonrails.org/i18n.html.
-#
-# Be aware that YAML interprets the following case-insensitive strings as
-# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
-# must be quoted to be interpreted as strings. For example:
-#
-#     en:
-#       "yes": yup
-#       enabled: "ON"
-
+---
 en:
-  hello: "Hello world"
+  about_me:
+    description:
+      I'm Chris, a fourth year computer science student at the University
+      of Waterloo. As a software developer, I'm passionate about creating efficient
+      and scalable applications, and love working across the entire stack. My expertise
+      lies in Ruby on Rails, Cloud infrastructure, and C#/.NET development. I've worked
+      extensively in the cybersecurity umbrella, with a focus on implementing various
+      identity and access management strategies for user authentication. As a site
+      reliability engineer, my expertise lies primarily in synthetic monitoring, Moogsoft
+      alerts integration, API and secrets storage, and Kubernetes maintenance. I enjoy
+      solving complex problems and continuously learning new skills to enhance my
+      craft.
+    free_time:
+      In my free time, I enjoy playing video games, working on personal projects,
+      playing golf, building computers, and spending time with friends and family.
+      I'm always looking for new challenges and opportunities to grow as a developer.
+    title: About me
+  built_with: Built with Ruby on Rails and Bootstrap
+  contact_card:
+    title: Contact
+  hello: Hello world
+  name: Christopher R. Long
+  professional_experience:
+    title: Experiences
+  welcome: Welcome to my personal website☺️
