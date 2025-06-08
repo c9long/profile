@@ -35,8 +35,20 @@
               <a class="nav-link active text-light" aria-current="page" href="/home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="/clio">Clio</a>
+              <a class="nav-link text-light" href="<%= clio_path %>">Clio</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="<%= unity_path %>">Unity</a>
+            </li>
+            <div class="d-flex dropdown">
+              <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Manulife
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="<%= manulife_sre_path %>">SRE</a></li>
+                <li><a class="dropdown-item" href="<%= manulife_gcs_path %>">Security Analyst</a></li>
+              </ul>
+            </div>
           </ul>
           <div class="d-flex dropdown me-2">
             <a class="btn btn-outline-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

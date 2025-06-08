@@ -5,7 +5,7 @@
 <div class="mx-5 text-light">
   <div class="row justify-content-center align-items-center mx-0 mb-3">
     <div class="col-auto mx-0 px-5 text-center">
-      <%= image_tag("headshot.jpg", class:"rounded-circle", height: 400, width: 400) %>
+      <%= image_tag("headshot.jpg", class:"rounded-circle display-4 display-md-3 display-lg-2", height: 400, width: 400) %>
     </div>
     <div class="col-auto px-5">
       <div class="container-fluid">
@@ -60,16 +60,16 @@
     <p class="text-center text-opacity-75 fw-semibold text-2xl mb-3 pe-5"><%= t("professional_experience.title") %></p>
     <div style="height: 30px;"></div>
     <div class="col-3 text-center">
-      <%= link_to image_tag("Ruby.webp", class: "rounded-circle", height: 350), "/clio" %>
+      <%= link_to image_tag("Ruby.webp", class: "rounded-circle", height: 350), clio_path %>
     </div>
     <div class="col-3 text-center">
-      <%= link_to image_tag("csharp.svg", class: "rounded-circle border border-white", height: 350, style: "border-width: 8px;"), "/" %>
+      <%= link_to image_tag("csharp.svg", class: "rounded-circle border border-white", height: 350, style: "border-width: 8px;"), unity_path %>
     </div>
     <div class="col-3 text-center">
-      <%= link_to image_tag("moogsoft.jpg", class: "rounded-circle", height: 350), "/" %>
+      <%= link_to image_tag("moogsoft.jpg", class: "rounded-circle", height: 350), manulife_sre_path %>
     </div>
     <div class="col-3 text-center">
-      <%= link_to image_tag("kotlin.png", class: "rounded-circle", height: 350), "/" %>
+      <%= link_to image_tag("power bi.png", class: "rounded-circle", height: 350), manulife_gcs_path %>
     </div>
   </div>
   <div style="height: 270px;"></div>

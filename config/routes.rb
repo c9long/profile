@@ -13,6 +13,11 @@ Rails.application.routes.draw do
   root "home#index"
   # Define a route for the Clio controller's index action
   get "clio" => "clio#index", as: :clio
+  get "amped_up" => "amped_up#index", as: :unity
+  namespace :manulife do
+    get "sre" => "sre#index", as: :sre
+    get "gcs" => "gcs#index", as: :gcs
+  end
 
   # Define a route for the Home controller's index action
   get "home" => "home#index", as: :home
