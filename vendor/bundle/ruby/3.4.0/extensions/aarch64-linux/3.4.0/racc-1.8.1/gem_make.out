@@ -1,0 +1,18 @@
+current directory: /home/chris/Rails Apps/profile/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+/home/chris/.local/share/mise/installs/ruby/3.4.1/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/chris/Rails Apps/profile/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250909-41170-tan20h sitelibdir\=./.gem.20250909-41170-tan20h clean
+
+current directory: /home/chris/Rails Apps/profile/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250909-41170-tan20h sitelibdir\=./.gem.20250909-41170-tan20h
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/chris/Rails Apps/profile/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250909-41170-tan20h sitelibdir\=./.gem.20250909-41170-tan20h install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20250909-41170-tan20h/racc
+
+current directory: /home/chris/Rails Apps/profile/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250909-41170-tan20h sitelibdir\=./.gem.20250909-41170-tan20h clean
