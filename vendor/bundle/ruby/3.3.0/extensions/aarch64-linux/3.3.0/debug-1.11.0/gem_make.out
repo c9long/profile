@@ -1,0 +1,19 @@
+current directory: /home/chris/Rails Apps/profile/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
+/home/chris/.local/share/mise/installs/ruby/3.3.8/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/chris/Rails Apps/profile/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20251118-9722-4jn87q sitelibdir\=./.gem.20251118-9722-4jn87q clean
+
+current directory: /home/chris/Rails Apps/profile/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20251118-9722-4jn87q sitelibdir\=./.gem.20251118-9722-4jn87q
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/chris/Rails Apps/profile/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20251118-9722-4jn87q sitelibdir\=./.gem.20251118-9722-4jn87q install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20251118-9722-4jn87q/debug
+
+current directory: /home/chris/Rails Apps/profile/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20251118-9722-4jn87q sitelibdir\=./.gem.20251118-9722-4jn87q clean
