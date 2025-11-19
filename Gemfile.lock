@@ -186,7 +186,7 @@ GEM
     marcel (1.0.4)
     matrix (0.4.2)
     mini_mime (1.1.5)
-    minitest (5.26.1)
+    minitest (5.26.2)
     msgpack (1.8.0)
     net-imap (0.5.10)
       date
@@ -364,7 +364,7 @@ GEM
     tilt (2.6.0)
     timeout (0.4.3)
     tsort (0.2.0)
-    turbo-rails (2.0.16)
+    turbo-rails (2.0.20)
       actionpack (>= 7.1.0)
       railties (>= 7.1.0)
     tzinfo (2.0.6)
