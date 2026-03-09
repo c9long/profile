@@ -1,3 +1,39 @@
 <% content_for :title do %>
   Clio
 <% end %>
+<div style="height: 100px;"></div>
+<div class="mx-5 text-light">
+  <div class="row justify-content-center align-items-center mx-0 mb-5">
+    <div class="col-auto text-center">
+      <%= image_tag("clio logo.png", alt: "Clio", height: 80) %>
+    </div>
+    <div class="col-auto ps-4">
+      <p class="fw-bold font-monospace my-0" style="font-size: clamp(1.8rem, 4vw, 3rem);">Software Developer</p>
+      <p class="text-opacity-75 font-monospace my-0" style="font-size: clamp(1rem, 2.5vw, 1.5rem);">January 2025 &ndash; August 2025 &middot; Vancouver, BC</p>
+    </div>
+  </div>
+  <div style="height: 40px;"></div>
+  <div class="row mx-0 justify-content-center">
+    <div class="col-lg-9 col-xxl-8">
+      <p class="text-start text-opacity-75 mb-4" style="font-size: 1.15rem;">
+        At Clio, I worked as a Software Developer on the Identity team, engineering OAuth 2.0 authentication
+        flows using Ruby on Rails and ORY Hydra. This centralized identity services across six customer-facing
+        applications — Manage, Grow, Accounting, Draft, Identity, and Admin — and laid the foundation for a
+        company-wide rollout of mandated multi-factor authentication.
+      </p>
+      <p class="text-start text-opacity-75 mb-4" style="font-size: 1.15rem;">
+        A major focus of my work was migrating 100% of legacy authentication systems to the unified Identity
+        platform, reducing authentication errors and simplifying future MFA rollouts. I designed and implemented
+        Warden-based SAML and SSO integrations that enabled independent law firms to configure secure,
+        multi-tenant access into Clio's application suite — giving firms direct control over their own identity
+        providers.
+      </p>
+      <p class="text-start text-opacity-75 mb-4" style="font-size: 1.15rem;">
+        Throughout my term I collaborated closely with product, security, and DevOps teams to architect scalable
+        backend services and automate CI/CD pipelines, ensuring authentication changes were thoroughly validated
+        across development, testing, and staging environments before reaching customers.
+      </p>
+    </div>
+  </div>
+</div>
+<div style="height: 150px;"></div>
